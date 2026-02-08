@@ -1,0 +1,149 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rojo: #c62828;
+  --rojo-oscuro: #8e0000;
+  --gris: #222;
+  --fondo: #fafafa;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--gris);
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 20px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.logo {
+  height: 360px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  background: var(--rojo);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.menu a:hover {
+  background: var(--rojo-oscuro);
+}
+
+.menu-pedidos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+  text-align: center;
+}
+
+.menu-pedidos h1 {
+  color: var(--rojo);
+  margin-bottom: 6px;
+}
+
+.menu-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+
+.grid-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+
+.card-plato {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-plato:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.18);
+}
+
+.card-plato img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-plato h3 {
+  margin: 16px 16px 6px;
+}
+
+.card-plato p {
+  margin: 0 16px 10px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--rojo);
+  margin-bottom: 12px;
+}
+
+.btn-pedir {
+  margin: 0 16px 18px;
+  padding: 10px 16px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.btn-pedir:hover {
+  background: #1ebe57;
+}
+
+
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 110px;
+  }
+}
