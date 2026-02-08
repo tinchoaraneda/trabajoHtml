@@ -1,0 +1,64 @@
+/* ===== Contacto ===== */
+.contact-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.contact-hero p {
+  color: #666;
+}
+
+/* Cards más elegantes */
+.card {
+  border: none;
+  border-radius: 18px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-body ul {
+  padding-left: 18px;
+}
+
+.card-body ul li {
+  margin-bottom: 6px;
+}
+
+/* Inputs más suaves */
+.form-control,
+.form-select {
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+/* Botón principal */
+.btn-danger {
+  background: #e60000;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main.container {
+    padding-top: 24px;
+  }
+
+  .card {
+    margin-bottom: 12px;
+  }
+}
